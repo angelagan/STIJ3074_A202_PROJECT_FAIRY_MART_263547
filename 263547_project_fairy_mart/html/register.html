@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>New User Registration Form</title>
+	<link rel="shortcut icon" type="image" href="/263547_project_fairy_mart/images/fairy_mart_logo.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="/263547_project_fairy_mart/js/validate.js"></script>
+	<link rel="stylesheet" href="/263547_project_fairy_mart/css/style1.css">
+</head>
+
+<body>
+	<div class="header">
+		<img src="/263547_project_fairy_mart/images/fairy_mart_logo.png" />
+		<h1>Fairy Mart</h1>
+		<p>We help you in your diet &#128512; </p>
+	</div>
+
+	<div class="navbar">
+		<a href="/263547_project_fairy_mart/php/user/login.php" class="right">Log In User Account <i class="fa fa-sign-in"></i></a>
+		<a href="/263547_project_fairy_mart/index.html" class="right">Home <i class="fa fa-home"></i></a>
+	</div>
+
+	<div class="main">
+		<h2>Create New User Account</h2>
+		<div class="container">
+			<form name="registerForm" action="/263547_project_fairy_mart/php/user/register.php" onsubmit="return validateRegForm()" method="post">
+				<div class="row">
+					<div class="col-25">
+						<i class="fa fa-user icon"></i>&nbsp
+						<label for="fname">Name</label>
+					</div>
+					<div class="col-75">
+						<input type="text" id="idname" name="name" placeholder="Your Name ...">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-25">
+						<i class="fa fa-envelope"></i>&nbsp&nbsp
+						<label for="lname">Email</label>
+					</div>
+					<div class="col-75">
+						<input type="text" id="idemail" name="email" placeholder="Your Email ...">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-25">
+						<i class="fa fa-phone"></i>&nbsp&nbsp
+						<label for="lphone">Phone Number</label>
+					</div>
+					<div class="col-75">
+						<input type="tel" id="idphone" name="phone" placeholder="Your Phone Number ...">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-25">
+						<i class="fa fa-child"></i>&nbsp&nbsp
+						<label for="gender">Gender</label>
+					</div>
+					<div class="col-75">
+						<select name="gender" id="idgender">
+							<option value="noselection">Please Select Your Gender</option>
+							<option value="Male">Male</option>
+							<option value="Female">Female</option>
+						</select>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-25">
+						<i class="fa fa-key"></i>&nbsp
+						<label for="lpassword">Password</label>
+					</div>
+					<div class="col-75">
+						<input type="password" id="idpass" name="passworda" placeholder="Your Password ...">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-25">
+						<i class="fa fa-lock"></i>&nbsp&nbsp
+						<label for="lpassword">Confirm Password</label>
+					</div>
+					<div class="col-75">
+						<input type="password" id="idpassb" name="passwordb" placeholder="Re-enter Password">
+					</div>
+				</div>
+				<div class="policy">
+					<p>By signing up, I agree to the Fairy Mart's Terms of Service, Privacy Policy, Refund Policy and Shipping Policy.</p>
+				</div>
+				<div class="row">
+					<div><input type="submit" value="Create"></div>
+				</div>
+
+			</form>
+
+		</div>
+
+
+	</div>
+
+
+	<div class="footer">
+		<footer>&copy; Copyright 2021 Fairy Mart. Design By Angela</footer>
+	</div>
+
+</body>
+
+</html>
